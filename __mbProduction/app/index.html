@@ -1,0 +1,742 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Burton Rast creates interactive solutions for all manner of connected things.">
+        <meta name="keywords" content="Design, IDEO, IDEO Labs, AIGA, Chicago, Human Centered Design, User Centered Design, Design Thinking, Interaction Design, User Interface Design, Software Design, Creative Direction, Art Direction, Design Direction, Data Visualization, Creative Coding, JavaScript, HTML5, CSS3, RWD, Responsive Design, D3, three.js, WebGL, iOS, Android, Phonegap, Arduino, processing, kinect, DepthKit">
+        <meta name="author" content="Burton Rast">
+
+        <!-- /// iOS meta tags /// -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- Enables or disables automatic detection of possible phone numbers in a webpage in Safari on iOS. -->
+        <meta name="format-detection" content="telephone=yes">
+
+        <!-- status bar hack for black text on transparent status bar
+        detail: http://blog.flinto.com/how-to-get-black-status-bars.html -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <!-- /// twitter card tags /// -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="misterburton">
+        <meta name="twitter:description" content="Burton Rast creates interactive solutions for all manner of connected things.">
+        <meta name="twitter:image:src" content="http://misterburton.com/img/mbLogo.gif">
+        <meta name="twitter:domain" content="misterburton.com">
+
+        <!-- /// facebook open graph tags /// -->
+        <meta property="og:title" content="misterburton" /> 
+        <meta property="og:type" content="website" /> 
+        <meta property="og:url" content=" http://www.misterburton.com/" />
+        <meta property="og:image" content=" http://misterburton.com/img/mbLogo.gif" />
+        <meta property="og:description" content="Burton Rast creates interactive solutions for all manner of connected things." />
+
+        <title>misterburton</title>
+
+        <!-- /// home screen icons /// -->
+        <link rel="apple-touch-icon" href="http://misterburton.com/work/icons/apple-touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="http://misterburton.com/work/icons/apple-touch-icon-retina.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="http://misterburton.com/work/icons/apple-touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="http://misterburton.com/work/icons/apple-touch-icon-ipad-retina.png" />
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="../bower_components/outdated-browser/outdatedbrowser/outdatedBrowser.css">
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <header></header>
+          <!-- <header id="header">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <ul id="nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WORDS</a></li>
+                    <li><a href="#">RÉSUMÉ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header> -->
+
+          <div id="delaunay"></div>
+          
+          <!-- SITE HEADER IMAGE | branding wrapper -->
+          <div id="brandingWrapper">
+
+            <div  id="brandingContainer">
+
+              <div id="branding">
+                <img id="brandMark" src="images/mbShield.svg" alt="">
+                <div id="title">MISTERBURTON</div>
+              </div>
+
+            </div>
+
+            <div id="downArrow">
+              <!-- works, images and words. -->
+              <i class="fa fa-chevron-down fa-2x objblink"></i>
+            </div>
+
+            <div id="headerPhotoCaption"></div>
+
+          </div><!-- ./SITE HEADER IMAGE | branding wrapper -->
+
+          <!-- 
+          // TO-DO:
+          add read time for docs
+          add 'send to kindle' button for longer reads / 'no time for a 4 minute read'
+          add 'send to pocket / instapaper'
+          filter by post type drop down (sequential animate heights to 0)
+          konami code + gif + misterburton audio sample (easter egg)
+          tweet / fb / tumblr / pinterest share
+
+           -->
+
+          <!-- main content container -->
+          <div class="container">
+
+            <!-- /// UI / UX /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage" id="firstRow">
+                <img src="images/projects/medium.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>Restoring Meaning to the <span class="nowrap">term, UX.</span></h2>
+                <h3>A provocation for discussion.</h3>
+                <p>UX — short for user experience design — is an aspirational term. As designers, we should aspire to craft products that affect a positive experience for our users. UX is a relatively new term, one borne of an evolution from earlier phrases that roll off the tongue a little less easily, idioms like <em>user centered</em> or <em>human centered design</em>…</p>
+
+                <a class="viewButton" href="https://medium.com/ideo-stories/restoring-meaning-to-the-term-ux-3f1054c46c9e" target="_blank"><div>Read Full Article</div></a>
+                
+                <div class="cat">
+                  <i class="fa fa-file-text catIcon"></i> <span class="catCopy">Editorial</span>
+                </div>
+
+                <h5>30 JUN 2014</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./UI / UX /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// IDEO LABS /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/tools.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>IDEO Labs: Tools We Like</h2>
+                <h3>A quick look at our favorite tools for building and prototyping</h3>
+                <p>When you’re crunching against a tight deadline to design a new-to-the-world digital experience, you do a lot of learning on the fly. One of the cornerstones of our design process at IDEO is that we build to learn. I’ve found I work more quickly and effectively prototyping in the browser itself…</p>
+
+                <a class="viewButton" href="http://labs.ideo.com/2014/03/21/tools-we-like-v2/" target="_blank"><div>Read Full Article</div></a>
+                
+                <div class="cat">
+                  <i class="fa fa-file-text catIcon"></i> <span class="catCopy">Editorial</span>
+                </div>
+
+                <h5>30 JUN 2014</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./IDEO LABS /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// RESTORED STORIES /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/restored.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>Restored Stories</h2>
+                <p>&#8216;Restored Stories&#8217; is a project that reimagines the context within which bygone photographs from the public domain were captured to tell new, fictional stories of 114 characters or less.</p>
+
+                <a class="viewButton" href="http://restoredstori.es/" target="_blank"><div>Read Stories</div></a>
+                
+                <div class="cat">
+                  <i class="fa fa-book catIcon"></i> <span class="catCopy">Storytelling</span>
+                </div>
+
+                <h5>06 MAR 2014</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./RESTORED STORIES /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// OLIVIA /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/olivia.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>&#8216;Song for Olivia&#8217;</h2>
+                <p>&#8216;Song for Olivia&#8217; is a project initiated by my brother, David, when our niece was due for surgery in the fall of 2013…</p>
+
+                <a class="viewButton" href="pages/song-for-olivia.html"><div>View Project</div></a>
+                
+                <div class="cat">
+                  <i class="fa fa-music catIcon"></i> <span class="catCopy">Music-and-Family-Inspired Product Design</span>
+                </div>
+
+                <h5>06 DEC 2013</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./OLIVIA /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// SQUIRCLE /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/dabble.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>Rapid, Repsonsive Web Design &amp; Development Class</h2>
+                <p>I taught a <a href="https://dabble.co/chicago/web-applications/classes/rapid-responsive-web-design-and-development-with-burton-rast" target="_blank">dabble class</a> on rapid, responsive design &amp; development from which all proceeds were donated to Chicago’s <a href="http://anticruelty.org/" target="_blank">Anti-Cruelty Society</a>. With the recipient of the donation in mind, I chose, for the subject matter, that we re-imagine the Anti-Cruelty Society site as a modern and responsive one.</p>
+
+                <a class="viewButton" href="http://misterburton.com/local/AntiCruelty/" target="_blank"><div>View Demo</div></a>
+                
+                <div class="cat">
+                  <i class="fa fa-mobile catIcon"></i> <span class="catCopy">RWD</span>
+                </div>
+
+                <h5>08 JAN 2013</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./DABBLE CLASS /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// SQUIRCLE /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/squircle.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>The Squircle and the Superellipse Nerd</h2>
+                <p>Every day at IDEO, I'm inspired by the knowledge and abilities of my associates in ways ever surprising and unexpected as they are delightful and brilliant. Much of this inspiration I gain as a direct result of the sharing of ideas, tools and techniques that help us prototype and build more quickly and effectively, a behavior the interaction designers and coders among us would likely attest that I engage in rather often…</p>
+
+                <a class="viewButton" href="pages/the-squircle-and-the-superellipse-nerd.html"><div>Read Full Article</div></a>
+                
+                <div class="cat">
+                  <i class="fa fa-file-text catIcon"></i> <span class="catCopy">Editorial</span>
+                </div>
+
+                <h5>19 NOV 2013</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./DABBLE CLASS /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// ON THE EQUALITY OF IDEAS /// -->
+
+            <!-- 
+            svg_51151: Designed by Vasil Enchev
+
+             -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/equalityOfIdeas.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>On the Equality of Ideas</h2>
+                <p>My title was nearly the end of me. I was blind to the reality that I had long been struggling to do creative work within the restrictive confines of corporate culture. As a young designer, it’s easy to be duped into believing in the veneer of colorful walls, casual dress and all the things that make a workplace feel as it is designed to, creative. As such, you’re mindless of the daily reality that the first thing you check at the door upon entering is the identity with which you first arrived, that of a designer…</p>
+
+                <a class="viewButton" href="pages/on-the-equality-of-ideas.html"><div>Read Full Article</div></a>
+                
+                <div class="cat">
+                  <i class="fa fa-file-text catIcon"></i> <span class="catCopy">Editorial</span>
+                </div>
+
+                <h5>29 NOV 2012</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./ON THE EQUALITY OF IDEAS /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// NATO /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/nato.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>NATO Summit, Chicago, USA, 2012</h2>
+                <p>May 20 &amp; 21, 2012, Chicago played host to the NATO summit, the first ever held in the United States outside of Washington, D.C. Tensions ran high as not all Chicagoans welcomed the presence of many controversial heads of state, both domestic and otherwise. These photos were captured on Sunday, May 20th, during an anti-NATO rally on Chicago’s South Side.</p>
+
+                <a class="viewButton" href="http://misterburton.com/nato/" target="_blank"><div>View Gallery</div></a>
+
+                <div class="cat">
+                  <i class="fa fa-image catIcon"></i> <span class="catCopy">Photography</span>
+                </div>
+
+                <h5>20 MAY 2012</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./NATO /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// DOWNCAST EYES /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/downcast.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>&#0145;Downcast Eyes&#0146; Animation</h2>
+                <p>&#0145;Downcast Eyes&#0146; was a show at Chicago’s Museum of Contemporary Art where artists were invited to &#8220;…present an amalgam of animated GIFs—the only restriction being that everyone’s work be on display only as long as the computer battery lasts.&#8221;</p>
+
+                <p>I teamed up with friend and associate, Adam Geremia, to produce a number of fluid dynamics studies to film. The below button links to a 720p, downscaled version of the final edit we used to produce a 30-second, 1080p animated GIF. The original, 480MB .gif file can be downloaded <a href="http://dl.dropbox.com/u/47633364/MCA1080/inky1080p.gif" download="downcastEyes">here</a>.</p>
+
+                <a class="viewButton" href="http://misterburton.com/local/DowncastEyes/" target="_blank"><div>View Video</div></a>
+
+                <div class="cat">
+                  <i class="fa fa-film catIcon"></i> <span class="catCopy">Animation</span>
+                </div>
+
+                <h5>20 MAR 2012</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./DOWNCAST EYES /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// MENTORING LUIS /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/meAndLuis.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>Mentoring Luis</h2>
+                <p>For the better part of a year, I mentored Luis, a 13-year old I first met through the <a href="http://www.sparkprogram.org/" target="_blank">Spark Program</a>. I taught Luis about the design process, converting hand drawn illustration into vector assets, game logic and JavaScrpt, while he ensured that I had more homework than I could ever handle as he knocked out any and all lessons as quickly as I could prepare them each week. Luis and I created a concept and demo for a mobile game with a ridiculous name. You can read about our efforts on the City of Chicago’s &#0145;One Good Deed&#0146; blog <a href="http://onegooddeedchicago.wordpress.com/2011/12/07/show-us-your-good-spicy-squid-and-the-saltwader-syndicate/" target="_blank">here</a>.</p>
+
+                <a class="viewButton" href="http://misterburton.com/local/SpicySquidDemo/" target="_blank"><div>View Game Demo</div></a>
+
+                <div class="cat">
+                  <i class="fa fa-gamepad catIcon"></i> <span class="catCopy">Game Design, Mentoring, All-Around Humbling</span>
+                </div>
+
+                <h5>SEP 2011 — JUN 2012</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./MENTORING LUIS /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// STATE FARM NEXT DOOR /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/nextDoor.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>Next Door for State Farm Insurance</h2>
+                <h3>A &#8220;financial learning space&#8221; for the next generation of customers</h3>
+                <p>State Farm, which ranked 37th on the Fortune 500 list in 2011, is the leading insurance company in North America. The company offers a broad range of insurance, banking, and investment products and services. Over the past few years, State Farm’s core offerings have faced various challenges, including a decrease in car ownership per household, public policy changes, safer vehicle design, new car-sharing services, and a shifting client base. To address a changing marketplace and build stronger relationships with Millennials (consumers born between 1981 and 2000), State Farm engaged IDEO in a four-year, radically collaborative relationship that resulted in the design and launch of Next Door, a community-focused learning center that offers free, no-pressure financial coaching to consumers in the Chicago area…</p>
+
+                <a class="viewButton" href="pages/next-door-for-state-farm-insurance.html"><div>Read Full Case Study</div></a>
+
+                <div class="cat">
+                  <i class="fa fa-cogs catIcon"></i> <span class="catCopy">Digital Build</span>
+                </div>
+
+                <h5>AUG 2011</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./STATE FARM NEXT DOOR /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// MYFORD MOBILE /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/MyFordMobile.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>MyFord Mobile for Ford Motor Company</h2>
+                <h3>A smartphone app that reinforces smarter driving behaviors</h3>
+                <p>As environmental regulations tighten and consumer demand grows, carmakers around the world are rushing to develop gas-free battery electric vehicles (BEVs) that run exclusively on electricity stored in powerful, state-of-the-art batteries. Leading the zero-emission charge in America, Ford Motor Company plans to break into the consumer electric car market with the Focus Electric, slated to hit dealerships in 2012…</p>
+
+                <a class="viewButton" href="pages/my-ford-mobile-for-ford-motor-company.html"><div>Read Full Case Study</div></a>
+
+                <div class="cat">
+                  <i class="fa fa-cogs catIcon"></i> <span class="catCopy">Digital Build</span>
+                </div>
+
+                <h5>JAN 2011</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./MYFORD MOBILE /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// WALGREENS /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/walgreens.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>Community Pharmacy <span class="nowrap">for Walgreens</span></h2>
+                <h3>Transforming the corner drugstore into a destination for health and daily living</h3>
+                <p>From humble beginnings as a local Chicago pharmacy more than a century ago, Walgreens is now the largest drugstore chain in America, with over 7,700 stores in all 50 states and sales of $72 billon. In addition to its in-store pharmacies, Walgreens also offers drive-thru and e-script pharmacy services, operates Take Care immediate care clinics, and administers flu shots and other immunizations.  Repositioning itself as a national leader in wellness, Walgreens asked IDEO to help rethink, reframe, and evolve what it means to be a community pharmacy in the 21st century…</p>
+
+                <a class="viewButton" href="pages/community-pharmacy-for-walgreens.html"><div>Read Full Case Study</div></a>
+
+                <div class="cat">
+                  <i class="fa fa-cogs catIcon"></i> <span class="catCopy">Digital Build</span>
+                </div>
+
+                <h5>JUL 2010</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./WALGREENS /// -->
+
+            <!-- ////////////////////////////////////////////// -->
+            <div class="row">
+              <div class="col-xs-12 divider"></div>
+            </div>
+            <!-- ////////////////////////////////////////////// -->
+
+            <!-- /// TENDRIL /// -->
+
+            <!-- image -->
+            <div class="row">
+              
+              <div class="col-xs-12 projectImage">
+                <img src="images/projects/tendril.jpg" height="900" width="1600" alt="">
+              </div>
+
+            </div><!-- ./image -->
+
+            <!-- copy & tags -->
+            <div class="row copyTags">
+              
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <h2>Vision Home Energy-Management System <span class="nowrap">for Tendril</span></h2>
+                <h3>A revolutionary digital display that promotes household energy savings</h3>
+                <p>Tendril is a leading cleantech energy-management firm that strives to bring widespread insight and control to the smart grid. The Boulder, Colorado-based start-up’s core technology offers an open, secure, and scalable means for enabling utilities and their customers to monitor and share data. The company, looking for the best way to engage consumers in managing their residential energy use, partnered with IDEO to develop a “product ecosystem” strategy. Their partnership led to the design of a device that helps households visualize, monitor, and control energy consumption, and an accompanying web portal…</p>
+
+                <a class="viewButton" href="pages/vision-home-energy-management-system-for-tendril.html"><div>Read Full Case Study</div></a>
+
+                <div class="cat">
+                  <i class="fa fa-cogs catIcon"></i> <span class="catCopy">Digital Build</span>
+                </div>
+
+                <h5>MAR 2010</h5>
+
+              </div>
+
+            </div><!-- ./copy & tags -->
+
+            <!-- /// ./TENDRIL /// -->
+
+          </div><!-- ./main content container -->
+
+          <div id="aboutWrapper">
+            <div class="container">
+              <div class="row">
+                
+                <!-- photo -->
+                <div class="col-xs-3 col-md-1 col-md-offset-2">
+                  <img src="images/meDepthKit.jpg" id="bioThumbnail" height="640" width="640" alt="">
+                </div>
+                
+                <!-- bio -->
+                <div class="col-xs-9 col-md-7" id="aboutMeCopy">
+                  Hi, all. I'm Burton — assumed name, &#0145;misterburton&#0146; — a math, art, data, written word &amp; photography nerd. I work as an interaction and software designer at <a href="http://www.ideo.com/" target="_blank">IDEO</a>, serve on the board of directors at <a href="http://chicago.aiga.org/" target="_blank">AIGA Chicago</a> and author abbreviated tales for a project I call, &#0145;<a href="http://restoredstori.es/" target="_blank">Restored Stories</a>.&#0146; I once made omelets for IDEO's entire <span class="nowrap">Chicago studio</span>.
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  
+                  <!-- social icons -->
+                  <div id="socialIcons">
+                    <a href="http://www.twitter.com/misterburton" target="_blank"><i class="fa fa-twitter-square"></i></a>&nbsp;
+                    <a href="http://www.instagram.com/misterburton" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;
+                    <a href="" id="btcIcon"><i class="fa fa-btc"></i></a>&nbsp;
+                    <a href="http://www.facebook.com/misterburton" target="_blank"><i class="fa fa-facebook-square"></i></a>&nbsp;
+                    <a href="http://www.linkedin.com/in/misterburton" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                  </div><!-- ./social icons -->
+
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <!-- progress bar -->
+          <div id="progressBar"></div>
+
+          <!-- outdated browser -->
+          <div id="outdated">
+             <h6>Your antiquated browser is sad, unsecured and outdated.</h6>
+             <p>Please update your browser to view the content of this page correctly.<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser</a></p>
+             <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+          </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+        <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="../bower_components/offline.js/offline.js"></script>
+        <script src="../bower_components/outdated-browser/outdatedbrowser/outdatedBrowser.js"></script>
+        <script src="../bower_components/pace/pace.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-1016835-11');ga('send','pageview');
+        </script>
+
+        
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

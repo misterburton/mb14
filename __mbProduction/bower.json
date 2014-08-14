@@ -1,0 +1,15 @@
+{
+  "name": "-mbproduction",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "~1.11.0",
+    "gsap": "~1.13.1",
+    "fastclick": "~1.0.3",
+    "outdated-browser": "~1.0.2",
+    "offline.js": "~1.0.1",
+    "pace": "~0.5.5",
+    "font-awesome": "~4.1.0"
+  },
+  "devDependencies": {}
+}
